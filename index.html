@@ -362,6 +362,9 @@ const COMMANDS = {
   date: () => printLine(new Date().toString(), 'dim'),
   clear: () => { outputEl.innerHTML = ''; },
   sudo: () => printLine("V2h5IGFzaz8gWW91IGFscmVhZHkgYnJva2UgaW4u", 'error'),
+  hi: () => printLine("Hello to you, too.", 'dim'),
+  hello: () => printLine("Hello to you, too.", 'dim'),
+  ma76: () => printLine("Hello! If you need help, type 'HELP'.",'dim'),
 
   ls: () => {
     const node = nodeAt(cwd);
