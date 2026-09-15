@@ -150,13 +150,9 @@
 </div>
 
 <script>
-/* ======================================================================
-   EDIT ME — all site content lives in this one object. Swap in your own
-   bio, project list, contact info and links. Every value here is either
-   a plain string or an array of strings (one per line of output).
-   ====================================================================== */
+
 const CONTENT = {
-  siteName: "The Asian Cloud City Educational Terminal",
+  siteName: "The Asian Cloud City Education Terminal",
 
   meta: [
     "This will be the only OOC entry on here, probably. This webpage",
@@ -167,19 +163,68 @@ const CONTENT = {
   ],
 
   // Each key becomes a filename (or, if you nest a { } object instead
-  // of a [ ] list, a SUBFOLDER) inside the dir/ directory — see FS
-  // and buildTree() below for how that's read.
+  // of a [ ] list, a SUBFOLDER) inside the dir/ directory 
   Dir: {
     "timeline": {
       "readme.txt": [
         "Select a year to see everything that happened in that year,",
         "sorted from most to least significant."
+      ],
+       "No files currently available.": [
+         "[dim] That's... Weird, it looks like the database is currently experiencing a shortage. Please try again later, I'll file a complaint!"
       ]
     },
      "locations": {
       "readme.txt": [
-        "All locations we know of at the moment.",
-      ]
+        "All locations we know of at the moment. POI stands for Points of Interest,",
+        "Notable people/places in or pertaining to the region.",
+      ],
+      "fissures": {
+        "regions.txt": [
+          "The fissures are broken up by continent, and then (if applicable) by separation. Most same-continent fissures are already connected by series of tunnel boring operations, however some remain separate.",
+          "",
+          "Ruin: Located in Greenland. Spans from the southern end of the continent to the north. Until 2247, the fissure was very active and held the ruins of an important monument from the Old World. However, it is now inexplicably gone. For more details, see ~/dir/locations/fissures/poi/angeltower.",
+          ".",
+          "Northern Main: Located in the greater Reclaimed Americas, NTM at its longest point spans 4979km from Kitikmeot, Nunavut to Durango, Mexico. It is connected to the Ottowan Proper via underground expansion.",
+          ".",
+          "Amazonian Fault: Located in the Southern Reclaimed Americas, the fissure seems to have split evently along the Amazon River. Most of the Amazonian Fault is flooded, making it an important food production site for Fissuremen.",
+          ".",
+          "Argentine Bend: A small, closed region resembling a 3 in shape. Despite the bulk of it being in Argentina, there are smaller crevices in Chile and on the border of Paraguay.",
+          ".",
+          "Russian Twins: Two fissures of similar shape and size, located ~900km away at the nearest points. An extensive underground monorail system has been constructed between the two, and many residents travel back and forth often. There is a high-interest relic inside the Levyy region, unfortunately it is currently guarded by a dangerous cult of fanatics. For more information, see ~/dir/locations/temples and ~dir/people/kdm.",
+          ".",
+          "Anansi: A thinner fissure, but the shape of it is long and branching, resembling the legs of a spider. The region is believed to be named after an ancient god, Anansi, however more research is needed.",
+          ".",
+          "Serce: Serce has been noted to have a peculiar shape, with a central heart shape and dozens of branching fissures therefrom. The reason for this abnormal pattern is under research, however the locals have been uncooperative, which has slowed down efforts quite a bit.",
+        ],
+        "history": {
+          "sum.txt": [
+            "The fissures have a complicated history, and the mad people within them are not too keen on sharing. This text is subject to change often as new information is found. We try to use first person accounts where we can, but we are still learning their language and how to gain their trust.",
+            ".",
+            "The fissures were formed circa 2175, after caustic gas bubbles finally began breaking through the Earth's surface. Current evidence tells us the smaller ones, such as Anansi, Argentine Bend and the Ottowan Proper, were the first to form, while larger fissures such as Northern Main and the Russian Twins took longer to rupture, leading to more gas build up and a much more violent creation.",
+            "There are theories that there are much smaller fissures out there that formed long before 2175, but evidence has not been found. Cases are currently being plead to the NKTG to find and research such fissures.",
+            "The Fissuremen were driven into their current habitat by the Raiders and their early hostility. Despite the Raiders now being a much more docile people, the Fissuremen have resisted pressure to move back to the surface. It's a common theory that they have become dependent on the Fog in some way.",
+            "Around 2206, there was a common myth that the Fissuremen had become mutated by the Fog, growing scales, beady eyes, and fishlike tails. We now know that this was simply the effect of limited visibility, traditional garb and substandard O2 masks. The theory is being revisited by our research teams.",
+            "Sources are required for the time of formation, but the Fissures are home a very large religious sect who call themselves Храм Древней Машины, Khram Drevney Mashiny, or the Temple of Ancient Machines. They have built their temples around very technologically significant relics and ruins. Researchers and informants have been met with great hostility.",
+            "Sometime around 2234, rumors began to spread of activity in and around Ruin, such as lights, large movement, loud sounds, etc. However, after sending research teams and a small group of settlers to set camp and observe, we learned that the fissure and the monument buried inside had completely disappeared, being replaced instead with a large heap of scrap and junk.",
+            "In 2262, ACC data centers in Nunavut reported a suspected tampering with their databases. By 2264, researchers and scouts began seeing Raiders and Fissuremen with cybernetic prosthetics, a technology that had before then been exclusive to citizens within or working closely with the ACC.",
+            "We have nothing to report on the past politics of the Fissures, as we have yet to find evidence of even a current political system or government. The ACC has graciously stepped in to care for them in this time of vulnerability, despite their humble denials.",
+            
+          ],
+          "2207RDRconflict.txt": [
+            "In 2207, a small Fissuremen encampment along the Gulf of Mexico was ransacked and razed by a small group of Raiders. The scavenging group had believed the encampment to be abandoned due to the lack of Fissuremen in the area itself, unaware that the encampment's residents were currently working nearby. The Raiders were then hunted on their route home, according to first-hand reports from a lone escapee. Several were impaled with harpoons, and others had their masks ripped off and were left to succumb to the harsh atmospherical conditions. Raiders surmised from the stolen O2 canisters and a harpoon that had been left in the neck of one of the bodies that the Fissuremen were likely at fault, and thus began a several month long back and forth. According to Raider reports, over 250 had died in the conflict. With pride, they reported that most of those deaths were Fissuremen.",
+            "The event has become mythologized among the Raiders and we can only assume it has been treated the same by the Fissuremen. Common stories and fairytales involve fish-like monsters rising from the water and drowning young children, or groups of Raiders hunting down leviathans and their droves of thralls."
+          ]
+
+        },
+        "poi":{
+          "angeltower": [
+            "We are unsure of what this tower did in the old world, we do know that much blood was shed trying to recover it, so it must be important. Attempts to recover it ceased around 2195 in favor of rebuilding society as a whole. Attempts were resumed by the ACC in 2226, but after losing many valuable minds and resources to the treacherous environment and even more hazardous fissure, the project was once again put on hold, and then permanently shelved after the site's inexplicable dissapearance in 2234.",
+            "Some researchers have proposed once again returning to investigate the new activity there, especially after new intel about a great floating machine that came and returned to the site and leaving trails of clean air behind it, but these proposals have been denied NKTG funding and staffing. If any of these studies have been carried out independently, the NKTG has not been made aware of the findings."
+          ]
+
+        }
+      },
 
      },
     "people": {
@@ -189,24 +234,27 @@ const CONTENT = {
         "We'd love to meet them!"
       ],
       "mask": {
-        "group": [
-            "I'm afraid there's nothing here right now.",
+        "group.txt": [
+            "Mask is an organized crime ring identified by the ACC in 2270. The members have gone through a great length to remain anonymous, ACC still does not know how many people operate under Mask or the full scope of their operations. The few reports we have of people who have worked with or met Mask agents tell that each of them wear heavy duty masks, thus the name assigned to them by the ACC. Many problems have been caused for Fissuremen, Raiders, and the ACC alike, so they are a very high priority. We have identified 5 key players in the Mask organization, through the sheer frequence with which certain crimes are drawn back to them. In some places, they can be idenitified by single-character alias, so great is their hold there. It should be very explicitly stated that should you suspect somebody is involved with Mask, especially as an agent, that you do not confront them and instead inform your local patrolling Garuda unit or visit one of their booths.",
+            "[error] ALERT: The danger posed to you and your community by confronting a possible Mask agent greatly, greatly surpasses the danger you pose to them! They will flee, or they will kill you. Or both. Do not be a hero!"
           ],
         "members": {
-          "7": [
-            "placeholder",
+          "7.txt": [
+            "7's identity is still unknown, however they are believed to have belonged to ACC's resource and data repossession unit at one point. 7 is known to be a data broker and occasional debt manager for Mask. It is worth noting that multiple sources have confirmed 7 to be an Android, which have a strict railguard in place to prevent indirectly or directly harming or degrading a human life. To hear of one breaking this protocol is unheard of. It is possible the Android has been tampered with, reprogrammed, or jailbroken, in which case they could be a valuable asset in uncovering Mask. There is a high priority warrant out for his recovery, with the specification that no harm come to him in the process.",
+            "While details are unknown, Garuda currently theorizes that 7 also plans a lot of high risk Mask operations, given the seemingly intimate knowledge of floor plans and security details. They are said to wear a mask consisting of a metal frog-headed cap with some kind of holographic projection device in the eyes and a thick, heavy duty cloth barrier suspended from the metal rim to cover the face, neck and shoulders in their entirety. The heat given off by the internal electronics of the mask makes it effective against IR cameras as well.",
+            "[dim] I don't like looking at this file. Please read quickly and leave...",
           ],
-          "D": [
-            "placeholder"
+          "D.txt": [
+            "D's identity is still unknown. They are believed to be in charge of money laundering and gathering, although the exact method is still under investigation. Our reports show him to be quite silver-tongued and witty, some saying they almost forgot they were supposed to be trying to get information out of them. They also seemed to exhibit elevated moods in their presence, rousing suspicions that they may also be dealing in substances. Their mask is described as a 'segmented sheet of solid black metal, with the space between each segment lining up to form a spade.' Due to this, there is some speculation that they may be involved in an illicit gambling scene."
           ],
-          "M": [
-            "placeholder"
+          "M.txt": [
+            "M's identity is unknown, and attempts to investigate have only been met with casualties. Most certainly of all the others, we know that M is in charge of murder. We have no concrete reports of their looks, demeanor, or other. Everyone we have sent to question M or try to dig information on them has been returned to our doorstep in less than palatable states. One thing can be said for certain, outcomes like that could not be possible without machinery or some very heavy duty Cybersthetics."
           ],
-          "T": [
-            "placeholder"
+          "T.txt": [
+            "T's identity is unknown, but we know they must have some higher level of influence in the Khram Drevney Machiny. They have been openly name dropped so many times in pertinence to Cybersthetics that there can be very little doubt as to what they do within the organization. We are still unsure whether they are working with the Templars or under their noses, although we suspect it must be the latter considering how stingy the Templars seem to be with who they operate on. Usually, these high grade 'Templar Steel' Cybersthetics are restricted to those deeply entrenched into their temples, however T seems to be providing them to the less faithful. Their mask has been said to be an old Briton style crusader helmet, it is also likely they have had a P.U.F.F. system installed."
           ],
-          "S": [
-            "placeholder"
+          "S.txt": [
+            "S does not seem to have a very large part in the organization, and is a lower priority target. We believe they act as a loan shark, working in close relation to T in order to further predate on those desperate for expensive augments. We have seen their mask, an exaggerated skull with a broken lower mandible, as part of the logo of a popular Metal band, although whether this is a signal of their affiliation, a poor-taste reference, or merely a coincidence, we do not currently know."
           ],
         }
       },
@@ -218,13 +266,19 @@ const CONTENT = {
         "A repository of files recovered from ACC research and recovery",
       "missions. Files are dated based on an estimate of their creation date",
       "Based on the contents within the files and where they were found."
+      ],
+      "No files currently available.": [
+        "[dim] That's... Weird, it looks like the database is currently experiencing a shortage. Please try again later, I'll file a complaint!"
       ]
     },
 
     "technology": {
       "readme.txt": [
         "An information bank about the various technologies that shape our life.",
-        "From household appliances to cybernetics and medicine."
+        "From household appliances to cybernetics and medicine.",
+    ],
+      "No files currently available.": [
+        "[dim] That's... Weird, it looks like the database is currently experiencing a shortage. Please try again later, I'll file a complaint!"
       ]
     },
   },
@@ -238,11 +292,9 @@ const CONTENT = {
 };
 
 /* ======================================================================
-   buildTree() — turns a plain nested object into the file/folder
-   structure FS needs, so you never have to write type:/children: by
-   hand. The rule is just about the SHAPE of the value:
-     - a [ ] list of strings      -> a FILE with those lines
-     - a { } object               -> a FOLDER, and everything inside
+   brother. learn. ive made it so easy for you now listen.
+     - []                             -> a FILE with those lines
+     - {}                             -> a FOLDER, and everything inside
                                       it goes through the same rule
                                       again (so folders can hold more
                                       folders, as deep as you want)
@@ -265,7 +317,7 @@ const FS = {
   }
 };
 
-let cwd = []; // path segments relative to FS root, e.g. ['projects']
+let cwd = []; 
 
 function nodeAt(pathArr) {
   let node = FS;
@@ -302,6 +354,13 @@ const inputEl = document.getElementById('cmdInput');
 const history = [];
 let historyIndex = -1;
 
+// Prefix any single line with [dim], [error], or [amber] to color just
+// that line works inside any file's `lines` array. e.g.:
+//   "some plain line",
+//   "[error]this one line shows up red",
+//   "[dim]this one line shows up dim",
+const LINE_TAG = /^\[(dim|error|amber)\]\s?/;
+
 function printLine(text, cls) {
   const div = document.createElement('div');
   div.className = 'line' + (cls ? ' ' + cls : '');
@@ -310,7 +369,14 @@ function printLine(text, cls) {
 }
 
 function printLines(lines, cls) {
-  lines.forEach(l => printLine(l, cls));
+  lines.forEach(l => {
+    const tagMatch = l.match(LINE_TAG);
+    if (tagMatch) {
+      printLine(l.slice(tagMatch[0].length), tagMatch[1]);
+    } else {
+      printLine(l, cls);
+    }
+  });
 }
 
 function scrollToBottom() {
@@ -332,7 +398,7 @@ const COMMANDS = {
       "",
       "  LS           list what's in the current directory",
       "  CD <dir>     move into a directory ( CD .. to go back, CD ~ for root )",
-      "  CAT <file>   print a file's contents",
+      "  Q <file>   print a file's contents",
       "  PWD          show current directory",
       "",
       "  HELP         show this list again"
@@ -352,7 +418,7 @@ const COMMANDS = {
       printLine('  ' + name + (child.type === 'dir' ? '/' : ''), 'dim');
     });
     printLine('');
-    printLine("CD dir, then CAT <file> to read one (or CD into a subfolder first).", 'dim');
+    printLine("Use CD dir, then Q <file> to open file.", 'dim');
   },
   contact: () => printLines(CONTENT.contact),
   whoami: () => printLines([
@@ -365,6 +431,9 @@ const COMMANDS = {
   hi: () => printLine("Hello to you, too.", 'dim'),
   hello: () => printLine("Hello to you, too.", 'dim'),
   ma76: () => printLine("Hello! If you need help, type 'HELP'.",'dim'),
+  howareyou: () => printLines(["Don't you have studying to do?",
+    "... But I am doing fine, thank you for asking."],'dim'),
+  
 
   ls: () => {
     const node = nodeAt(cwd);
@@ -384,12 +453,12 @@ const COMMANDS = {
     if (target.type !== 'dir') { printLine(`cd: not a directory: ${arg}`, 'error'); return; }
     cwd.push(arg);
   },
-  cat: (arg) => {
-    if (!arg) { printLine('usage: cat <file>', 'error'); return; }
+  q: (arg) => {
+    if (!arg) { printLine('usage: Q <file>', 'error'); return; }
     const node = nodeAt(cwd);
     const target = node.children && node.children[arg];
-    if (!target) { printLine(`cat: no such file: ${arg}`, 'error'); return; }
-    if (target.type !== 'file') { printLine(`cat: ${arg} is a directory`, 'error'); return; }
+    if (!target) { printLine(`Q: no such file: ${arg}`, 'error'); return; }
+    if (target.type !== 'file') { printLine(`Q: ${arg} is a directory`, 'error'); return; }
     printLines(target.lines);
   },
   pwd: () => printLine(pathString(), 'dim'),
@@ -452,7 +521,8 @@ function boot() {
       setTimeout(bootStep, 140);
     } else {
       printLine(`Welcome to ${CONTENT.siteName}.`);
-      printLine("Type HELP to see what's here.", 'dim');
+      printLine("Type HELP to see a list of commands", 'dim');
+      printLine("To know and think is man's greatest power.", 'dim')
       printLine('');
       updatePrompt();
       scrollToBottom();
