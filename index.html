@@ -152,7 +152,7 @@
 <script>
 
 const CONTENT = {
-  siteName: "The Asian Cloud City Education Terminal",
+  siteName: "The Asiatic Cloud City Education Terminal",
 
   meta: [
     "This will be the only OOC entry on here, probably. This webpage",
@@ -179,6 +179,37 @@ const CONTENT = {
         "All locations we know of at the moment. POI stands for Points of Interest,",
         "Notable people/places in or pertaining to the region.",
       ],
+      "acc": {
+        "regions.txt": [
+          "The ACC (Asiatic Cloud Cities) spans over almost the entire continent of Asia, with exception of some flooded islands and a chunk of Russia. However, since 2247 the ACC has also held territory in Nunavut, RA, and as of 2273 Cloud Cities are being constructed along the Western coast of the South American continent.",
+          "These cities can be broken up into four specific regions, although the exact borders between the North and the South are not legally defined and can be described differently depending on who you ask.",
+          "",
+          "Northern Cloud Cities: Commonly, the Northern end extends from Mongolia's far border and parts of Dongbei to the Chukchi Pen in Russia, although there are some people who consider the Koreas and Mongolia to be part of this region as well.",
+          ".",
+          "Southern Cloud Cities: The Southern end comprises of China, Kazahkstan and Turkey on the upper borders, with the lowers being India, Yemen and Oman. Some people consider Thailand and her neighboring countries to be part of the territory as well, however the islands have been flooded and uninhabitable due to weather events for years, making the distinction redundant.",
+          ".",
+          "Nunavut: A territory in the RA that the ACC has mostly used for research stations and archival buildings. There are also a number of Garuda training centers in the region.",
+          ".",
+          "Gancho: Named for the hook shape of the proposed territory, Gancho is to be built along the entire Western end of the South American continent, passing along Chile, Bolivia, Peru, Ecuador and Colombia.",
+        ],
+        "history": {
+          "sum.txt": [
+            "The Asiatic Cloud cities first began construction in 2168, after the announcement of latent gas bubbles under the Earth's crust. Millions of people flocked to the Asian continent to help work on the cities in hopes of securing their safety in the incoming apocalypse.",
+            "The ACC, by the time the first ruptures began, spanned the whole of China, India, and some small regions of Russia, and was home to around 4 million people, many of which were transcontinental immigrants. Due to the hostile nature of the Raiders and the inability to access many Fissuremen, the ACC remained a very self contained society.",
+            "In 2200, the ACC began assembling Research and Recovery teams, who would venture to the ruined surface in search of artefacts, resource deposits, and data. These RNR Teams would often consist of several hired raiders, a scribe, and a handful of scholars. After the successful backwards engineering of Advanced Robotics in 2220, it also became customary to assign an MA unit in place of a scribe and a full research team. Reducing the number of actual human hands on the scene made these missions less dangerous and allowed them to become more frequent.",
+            "In 2201, the Nanbu Kashite Tushu Guan was built inside of the South China Karsts, although construction and research for the institution had been underway long before. Unfortunately, simply due to the limited space, the NKTG has to be very selective with their students. Thankfully, many smaller academies under our wing have been established, which have much higher acceptance rates.",
+            "In 2248, an RNR team working in old-world Nairobi salvaged a large SSD block of information about Cybernetic Prosthetics. By 2250, the first successful Cybernetic Prosthetics were implanted by NKTG scientists. For a while, the ACC had managed to keep this information out of the hands of the less responsible and well-intentioned, and after a tragic incident in 2262, important data about the practice was stolen. We still do not know who stole it, only that it is now in the hands of the KDM.",
+            "To combat the rise of organized crime from a group the ACC identified in 2270 as 'Mask', the 2262 raid on ACC data centers, and the rising concerns about the missing Angel Tower, the ACC announced and deployed a unit called Garuda in 2271. These soldiers were trained for combat and basic medicine, and were supplied with a pair of prosthetic wings, a headset, and several flasks of Amrita. For more information about Amrita, please see ~/dir/technology/medicine/emergency/amrita. For more information on the Garuda, please see ~/dir/people/garuda.",
+            "In 2275, one of the NKTG's daughter campuses launched an immigrant program that would provide impoverished Fissuremen with the privelege to come live and educate themselves for free. We here at the NKTG understand that these people are not so linguistically inclined, and so we have spared them the hassle of having to sign up."
+          ],
+        },
+        "poi": {
+          "nktg.txt":[
+            "The Nanbu Kisate Tushu Guan, or the Southern Karst Library, is the highest form of modern education one could hope for. Located in the Southern Cloud Cities, the facilities are drilled into the Karsts and supplied with a generous amount of O2 and a patented gasseous solution believed to stimulate the brain and induce focus. The NKTG also sponsors a collection of smaller, more accessable colleges throughout the wider ACC, however they often have less funding and offer less courses. Those who have graduated one of NBTG's daughter programs, however, are usually bumped up the waiting list should they choose to apply to the main school. The NBTG's current biggest programs are Archeology, Robotics and Medicine, with thousands of students in each program at the time of writing.",
+            "[amber] The Nanbu Kisate Tushu Guan often hires muscle for their hundreds of RNR teams. Sound like a fit for you? Please contact your nearest Academy for more information!"
+          ]
+        },
+      },
       "fissures": {
         "regions.txt": [
           "The fissures are broken up by continent, and then (if applicable) by separation. Most same-continent fissures are already connected by series of tunnel boring operations, however some remain separate.",
@@ -195,7 +226,7 @@ const CONTENT = {
           ".",
           "Anansi: A thinner fissure, but the shape of it is long and branching, resembling the legs of a spider. The region is believed to be named after an ancient god, Anansi, however more research is needed.",
           ".",
-          "Serce: Serce has been noted to have a peculiar shape, with a central heart shape and dozens of branching fissures therefrom. The reason for this abnormal pattern is under research, however the locals have been uncooperative, which has slowed down efforts quite a bit.",
+          "Serce: Mainly in Poland, Serce has been noted to have a peculiar shape, with a central heart shape and dozens of branching fissures therefrom. The reason for this abnormal pattern is under research, however the locals have been uncooperative, which has slowed down efforts quite a bit.",
         ],
         "history": {
           "sum.txt": [
@@ -218,19 +249,25 @@ const CONTENT = {
 
         },
         "poi":{
-          "angeltower": [
+          "angeltower.txt": [
             "We are unsure of what this tower did in the old world, we do know that much blood was shed trying to recover it, so it must be important. Attempts to recover it ceased around 2195 in favor of rebuilding society as a whole. Attempts were resumed by the ACC in 2226, but after losing many valuable minds and resources to the treacherous environment and even more hazardous fissure, the project was once again put on hold, and then permanently shelved after the site's inexplicable dissapearance in 2234.",
             "Some researchers have proposed once again returning to investigate the new activity there, especially after new intel about a great floating machine that came and returned to the site and leaving trails of clean air behind it, but these proposals have been denied NKTG funding and staffing. If any of these studies have been carried out independently, the NKTG has not been made aware of the findings."
           ]
 
         }
       },
+      "aimss": {
+        "regions.txt": [],
+        "history": {},
+        "poi": {},
+      },
+      
 
      },
     "people": {
       "readme.txt": [
-        "Notable figures and groups throughout history and current",
-        "times. If you see any of these people, please contact us.",
+        "Notable figures and groups throughout history and current times.",
+        "If you see any of these people, please contact us.",
         "We'd love to meet them!"
       ],
       "mask": {
@@ -258,6 +295,14 @@ const CONTENT = {
           ],
         }
       },
+      "garuda": {
+        "group.txt": [
+          "[amber] Only Naga are devoured by Garuda, and only they fear him.",
+          "The Garuda is a fleet of armored, winged public servants founded by the ACC in 2271 to combat growing civilian unrest, rebellion, and criminal activity. The Garuda are trained as medics first, then in combat, with the goal of helping before harming. The Garuda headquarters are a series of floating platforms that move across the Globe. They are deployed all over the world, not just the ACC. In fact, more of them are stationed in the Fissures and Surface than the ACC. Anybody can volunteer to join the Garuda, however they must pass training and multiple evalutations (Physical, Psychological, Moral) before being deployed.",
+          "Standard issue gear for Garuda is a pair of cybernetic exo-wings, a headset with a visor and a togglable O2 mask, 3 vials of Amrita each, basic restraints and a patented pair of clawed 'Talon' boots to improve landings. Garuda are armed, however their standard issue weapons are considered non-lethal. Common weapons include 8oz Meteor Hammers, Tazers, and Bola.",
+          "Their uniform varies by department. However, because of their wings, headsets and Talon boots, they are very easy to recognize.",
+        ]
+      },
 
   
     },
@@ -277,16 +322,39 @@ const CONTENT = {
         "An information bank about the various technologies that shape our life.",
         "From household appliances to cybernetics and medicine.",
     ],
-      "No files currently available.": [
-        "[dim] That's... Weird, it looks like the database is currently experiencing a shortage. Please try again later, I'll file a complaint!"
-      ]
+      "household": {
+        "o2mask.txt":[
+          "The oxygen mask has gone through many revisions, although in the early years many of them were looted from ruins of hospitals, museums, or created shoddily from scrap. In 2234, the ACC was able to bring a standardized O2 mask to the common household for low prices."
+        ],
+        "o2can.txt": [
+          "There are many companies who sell and manage O2 canisters, although the main supplier is OxyTonic in the Northern Cloud Cities. They come most commonly in small, aluminum cartridges that slot into the back or side (depending on model) of O2 masks. However, they come in a variety of sizes for a variety of purposes. Most commonly in 30L, 170L, 330L and 660L canisters for personal use, although for commercial and household use (such as ventilation of a business or home), some companies will sell in bulk up to 7080L."
+        ],
+      },
+      "advanced": {
+        "robotics": {},
+        "cybernetics": {},
+        "machinery": {},
+      },
+      "medicine": {
+        "psychiatric": {},
+        "physical": {},
+        "emergency": {
+          "amrita.txt": [
+            "Amrita is a vital medicine that acts similarly to Epinephrine, providing a burst of energy and reducing inflammation, swelling, mental fog, and reversing some effects of Fog Exposure. These effects are temporary, however, and it is recommended that the patient be rushed to the nearest clean-air environment for further treatment. Amrita comes in small, nebulized 12g cartridges. While Amrita is often left to professional hands, should you need to administer Amrita, follow these simple steps:",
+            "1: Remove the patients Oxygen canister from their mask. If they are not wearing a mask, cover their mouth and nose with a cloth or bag instead. It does not have to be perfectly tight, just enough for the most of the particles to be inhaled.",
+            "2: Insert the Amrita Vial through the Oxygen Port, using the built in port adapter if necessary. If you are using a cloth or bag, instead insert it through a small opening.",
+            "3: Activate the small switch on the side of the vial. Once it begins to hiss, bring the patient somewhere safe and find help."
+          ],
+        },
+      },
+
     },
   },
 
-  // EDIT ME — real contact details
+  // 
   contact: [
     "tumblr: axxelaxxelaxxel",
-    "My asks are open."
+    "To file a query with the NKTG, please contact the above line."
   ],
   
 };
